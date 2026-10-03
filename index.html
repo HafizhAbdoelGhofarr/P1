@@ -1,0 +1,109 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Sistem Informasi Data Mahasiswa - Praktikum 1 – Kelas PPW B</h1>
+        <p>Sistem yang ingin saya buat adalah sebuah aplikasi untuk mengelola data mahasiswa.</p>
+        <img src="IMG_7702.JPG" alt="Gambar Mahasiswa" width="300" height="300">
+    </header   >
+    <hr>
+    <nav>
+        <ul>
+            <li><a href="#informasi"> Informasi Aplikasi</a></li>
+            <li><a href="#daftar-mahasiswa">Daftar Mahasiswa</a></li>
+            <li><a href="#tambah-mahasiswa">Tambah Mahasiswa Baru</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+    <main>
+        <section id="informasi">
+            <h2>Informasi Sistem</h2>
+            <p>Sistem ini dirancang untuk mempermudah pengelolaan data mahasiswa, termasuk penambahan, pengeditan, dan penghapusan data mahasiswa.</p>
+            <article>
+                <h3>Fitur Utama</h3>
+                <p>Sistem ini memiliki fitur utama seperti pencarian data mahasiswa, filter berdasarkan jurusan, dan laporan statistik mahasiswa.</p>
+            </article>
+        </section>
+        <hr>
+        <section id="daftar-mahasiswa">
+            <h2>Daftar Mahasiswa Aktif</h2>
+            <p>Berikut adalah daftar mahasiswa aktif yang terdaftar dalam sistem.</p>
+            <table border="1" cellpadding="8" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Gambar</th>
+                        <th>NIM</th>
+                        <th>Nama</th>
+                        <th>Program Studi</th>
+                        <th>Angkatan</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><img src="IMG_7702.JPG" alt="Foto Mahasiswa" width="50" height="80"></td>
+                        <td>2415061076</td>
+                        <td>Hafizh Abdoel Ghofar</td>
+                        <td>Teknik Informatika</td>
+                        <td>2024</td>
+                        <td>hafizh.ghofar@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <hr>
+        <section id="form-tambah">
+            <h2>Tambah Mahasiswa Baru</h2>
+            <p>Gunakan formulir di bawah ini untuk menambahkan data mahasiswa baru ke dalam sistem.</p>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Formulir Pendaftaran Mahasiswa</legend>
+                    <p>
+                        <label for="npm">Nomor Pokok Mahasiswa (NPM):</label><br>
+                        <input type="text" id="npm" name="npm" placeholder="Contoh : 2415061076" required pattern="[0-9]{8,12}" title="NPM harus berupa angka 8-12 digit"><br>
+                        <small>Masukkan NPM yang valid (8-12 digit angka).</small>
+                    </p>
+                    <p>
+                        <label for="nama">Nama Lengkap:</label><br>
+                        <input type="text" id="nama" name="nama" placeholder="Contoh : Hafizh Abdoel Ghofar" required minlength="3" maxlength="100"><br>
+                        <small>Masukkan nama lengkap mahasiswa.</small>
+                    </p>
+                    <p>
+                        <label for="program_studi">Program Studi:</label><br>
+                        <select id="program_studi" name="program_studi" required>
+                            <option value="">Pilih Program Studi</option>
+                            <option value="Teknik Informatika">Teknik Informatika</option>
+                        </select><br>
+                        <small>Pilih program studi yang sesuai.</small>
+                    </p>
+                    <p>
+                        <label for="angkatan">Tahun Angkatan:</label><br>
+                        <input type="number" id="angkatan" name="angkatan" placeholder="Contoh : 2024" required min="2018" max="2026"><br>
+                        <small>Masukkan tahun angkatan mahasiswa.</small>
+                    </p>
+                    <p>
+                        <label for="email">Alamat Email:</label><br>
+                        <input type="email" id="email" name="email" placeholder="Contoh : ahmad.fauzi@example.com" required><br>
+                        <small>Masukkan alamat email yang valid.</small>
+                    </p>
+                    <p>
+                        <button type="submit" value="submit">Simpan Data Mahasiswa</button>
+                        <button type="reset" value="reset">Reset Formulir</button>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
